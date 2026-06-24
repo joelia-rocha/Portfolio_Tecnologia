@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio Profissional de Joélia Rocha - Atividade Prática UNINTER.">
+  <title>Portfólio | Joélia Rocha</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+  <section class="banner" id="home">
+    <header>
+      <a href="#" class="logo">Joélia Rocha</a>
+      <img src="taggle2.png" id="toggle" onclick="toggle()">
+    </header>
+    <div class="content">
+      <h2>Olá a todos,<br> Eu sou a <span>Joélia Rocha</span></h2>
+      <p>Seja bem-vindo ao meu portfólio profissional. Aqui você conhecerá um pouco mais sobre a minha trajetória, formação acadêmica e projetos desenvolvidos.</p>
+      <a href="#about">Saiba Mais</a>
+    </div>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+      <li><a href="https://www.linkedin.com/in/joelia-rocha/"><img src="linkedin.png" alt="LinkedIn"></a></li>
+    </ul>
+  </section>
+
+  <div id="navigation">
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre Mim</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+
+  <section id="about" class="site-section">
+    <h2>Sobre Mim</h2>
+    <div class="section-content">
+      <p>Olá! Meu nome é Joélia Rocha e sou estudante da UNINTER. Sou uma entusiasta da tecnologia e do desenvolvimento web, sempre buscando aprender novas ferramentas e boas práticas para criar experiências digitais incríveis, funcionais e acessíveis.</p>
+    </div>
+  </section>
+
+  <section id="formacao" class="site-section">
+    <h2>Formação Acadêmica</h2>
+    <div class="section-content">
+      <div class="item-formacao">
+        <h3>UNINTER</h3>
+        <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+        <p>Graduação: Em andamento  </p>
+      </div>
+      <div class="item-formacao">
+        <h3>Outros Cursos & Certificações</h3>
+        <p>Next (Cesar School): Programação de computadores</p>
+        <p>Safetec: Gemini Code Assist & Cloud AI</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="site-section">
+    <h2>Portfólio</h2>
+    <div class="section-content">
+      <p>Aqui estão alguns dos principais projetos que desenvolvi durante a minha jornada de estudos:</p>
+      <div class="galeria-portfolio">
+        <div class="projeto-card">
+          <h3>Projeto 01 - Landing Page</h3>
+          <p>Este próprio site portfólio, planejado e estruturado de forma responsiva utilizando tecnologias web puras.</p>
+        </div>
+        <div class="projeto-card">
+          <h3>Projeto 02 - Bot de Moderação</h3>
+          <p>Desenvolvimento de um sistema automatizado focado em segurança e moderação de comunidades digitais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="site-section">
+    <h2>Contato</h2>
+    <div class="section-content">
+      <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+      
+      <form action="#" method="POST" class="form-contato">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@provedor.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+        </div>
+        
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+<script src="script.js"></script>
+</html>
