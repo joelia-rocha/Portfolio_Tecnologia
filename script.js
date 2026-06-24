@@ -2,8 +2,7 @@ function toggle() {
     var sec = document.getElementById('home');
     var nav = document.getElementById('navigation');
     
-    // Liga e desliga a classe active para abrir/fechar o menu
+    // Ativa ou desativa a classe para animar o menu lateral
     sec.classList.toggle('active');
     nav.classList.toggle('active');
 }
-
