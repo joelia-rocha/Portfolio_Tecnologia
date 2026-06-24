@@ -28,7 +28,6 @@ header .logo {
     letter-spacing: 2px;
 }
 
-/* Estilo do botão de Menu em texto */
 #toggle {
     font-size: 1.5em;
     font-weight: bold;
@@ -47,7 +46,6 @@ header .logo {
     border-color: #0c79ac;
 }
 
-/* Banner com fundo em degradê moderno sem necessidade de imagens */
 .banner {
     position: relative;
     width: 100%;
@@ -146,13 +144,12 @@ header .logo {
     background: #000;
 }
 
-/* Menu de redes sociais em texto */
+/* Menu de link lateral de rede social */
 .sci {
     position: absolute;
     display: flex;
     flex-direction: column;
     right: 100px;
-    gap: 10px;
 }
 
 .sci li {
@@ -175,7 +172,6 @@ header .logo {
     border-bottom-color: #0c79ac;
 }
 
-/* Estilos das seções adicionais */
 .site-section {
     padding: 80px 100px;
     min-height: 60vh;
@@ -255,7 +251,6 @@ header .logo {
     color: #0c79ac;
 }
 
-/* Formulário de Contato */
 .form-contato {
     display: flex;
     flex-direction: column;
@@ -308,7 +303,6 @@ header .logo {
     background: #000;
 }
 
-/* Responsividade Mobile */
 @media (max-width: 767px) {
     header {
         padding: 20px 30px;
