@@ -15,6 +15,7 @@ header {
     padding: 40px 100px;
     z-index: 10000;
     transition: 0.6s;
+    align-items: center;
 }
 
 header .logo {
@@ -25,27 +26,34 @@ header .logo {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.6s;
 }
 
-header img {
-    position: relative;
-    display: grid;
-    top: 0;
-    width: 45px;
-    height: 40px;
-    z-index: 10000;
-    transition: 0.6s;
+/* Estilo do botão de Menu em texto */
+#toggle {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
     cursor: pointer;
+    z-index: 10000;
+    transition: 0.3s;
+    background: #fff;
+    padding: 5px 15px;
+    border: 2px solid #000;
 }
 
+#toggle:hover {
+    background: #0c79ac;
+    color: #fff;
+    border-color: #0c79ac;
+}
+
+/* Banner com fundo em degradê moderno sem necessidade de imagens */
 .banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: url(plano1.jpg);
-    background-size: cover;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     display: flex;
     align-items: center;
     transition: 0.5s;
@@ -77,7 +85,7 @@ header img {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 
 #navigation ul li {
@@ -91,10 +99,12 @@ header img {
     font-size: 1.7em;
     font-weight: 600;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 #navigation ul li a:hover {
     color: #000;
+    transform: scale(1.05);
 }
 
 .content {
@@ -113,9 +123,10 @@ header img {
 
 .content p {
     font-size: 1.2em;
-    color: #000;
+    color: #333;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 15px;
+    line-height: 1.5;
 }
 
 .content a {
@@ -128,20 +139,20 @@ header img {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
+    transition: 0.3s;
 }
 
 .content a:hover {
-    background-image: linear-gradient(to right, rgba(241, 249, 250), rgb(13, 102, 175));
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
-    color: #000;
+    background: #000;
 }
 
+/* Menu de redes sociais em texto */
 .sci {
     position: absolute;
     display: flex;
     flex-direction: column;
     right: 100px;
+    gap: 10px;
 }
 
 .sci li {
@@ -149,26 +160,22 @@ header img {
 }
 
 .sci li a {
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 50px;
-    height: 50px;
+    display: block;
+    color: #000;
     text-decoration: none;
-    border: 1px solid #fff;
-    margin: 10px 0 0;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
 }
 
 .sci li a:hover {
-    background: #fff;
+    color: #0c79ac;
+    border-bottom-color: #0c79ac;
 }
 
-.sci li a img {
-    max-width: 20px;
-    filter: invert(1);
-    mix-blend-mode: difference;
-}
-
+/* Estilos das seções adicionais */
 .site-section {
     padding: 80px 100px;
     min-height: 60vh;
@@ -205,6 +212,7 @@ header img {
     line-height: 1.6;
     color: #333;
     max-width: 800px;
+    margin-top: 20px;
 }
 
 .item-formacao {
@@ -220,7 +228,6 @@ header img {
     margin-bottom: 5px;
 }
 
-/* Estilos da Área de Portfólio (Cards) */
 .galeria-portfolio {
     display: flex;
     gap: 20px;
@@ -248,7 +255,7 @@ header img {
     color: #0c79ac;
 }
 
-/* Estilos do Formulário de Contato */
+/* Formulário de Contato */
 .form-contato {
     display: flex;
     flex-direction: column;
@@ -275,7 +282,7 @@ header img {
     border: 1px solid #ccc;
     font-size: 1em;
     border-radius: 4px;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
 }
 
 .form-group input:focus,
@@ -301,22 +308,22 @@ header img {
     background: #000;
 }
 
+/* Responsividade Mobile */
 @media (max-width: 767px) {
     header {
-        padding: 20px 50px;
+        padding: 20px 30px;
+    }
+
+    #toggle {
+        font-size: 1.2em;
     }
 
     .banner {
-        padding: 100px 50px 150px;
+        padding: 120px 30px 150px;
     }
 
     .banner h2 {
         font-size: 1.8em;
-    }
-
-    .banner .content p,
-    .banner .content a {
-        font-size: 1em;
     }
 
     .banner.active {
@@ -329,21 +336,15 @@ header img {
     }
 
     #navigation ul li a {
-        font-size: 1.5em;
-        margin: 5px 0;
+        font-size: 1.4em;
     }
 
     .sci {
         position: absolute;
-        bottom: 50px;
+        bottom: 40px;
         flex-direction: row;
         right: initial;
-        left: 50px;
-    }
-
-    .sci li a {
-        margin: initial;
-        margin-right: 10px;
+        left: 30px;
     }
 
     .site-section {
