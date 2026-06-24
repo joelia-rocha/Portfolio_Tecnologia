@@ -6,41 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio Profissional de Joélia Rocha - Atividade Prática UNINTER.">
   <title>Portfólio | Joélia Rocha</title>
-  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 
 <body>
   <section class="banner" id="home">
     <header>
       <a href="#" class="logo">Joélia Rocha</a>
-      <img src="taggle2.png" id="toggle" onclick="toggle()">
+      <span id="toggle" onclick="toggle()">☰ Menu</span>
     </header>
     <div class="content">
       <h2>Olá a todos,<br> Eu sou a <span>Joélia Rocha</span></h2>
       <p>Seja bem-vindo ao meu portfólio profissional. Aqui você conhecerá um pouco mais sobre a minha trajetória, formação acadêmica e projetos desenvolvidos.</p>
       <a href="#about">Saiba Mais</a>
     </div>
+    
     <ul class="sci">
-      <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
-      <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
-      <li><a href="https://www.linkedin.com/in/joelia-rocha/"><img src="linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="#" target="_blank">Facebook</a></li>
+      <li><a href="#" target="_blank">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/joelia-rocha/" target="_blank">LinkedIn</a></li>
     </ul>
   </section>
 
   <div id="navigation">
     <ul>
-      <li><a href="#home">Início</a></li>
-      <li><a href="#about">Sobre Mim</a></li>
-      <li><a href="#formacao">Formação</a></li>
-      <li><a href="#portfolio">Portfólio</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="#home" onclick="toggle()">Início</a></li>
+      <li><a href="#about" onclick="toggle()">Sobre Mim</a></li>
+      <li><a href="#formacao" onclick="toggle()">Formação</a></li>
+      <li><a href="#portfolio" onclick="toggle()">Portfólio</a></li>
+      <li><a href="#contato" onclick="toggle()">Contato</a></li>
     </ul>
   </div>
 
   <section id="about" class="site-section">
     <h2>Sobre Mim</h2>
     <div class="section-content">
-      <p>Olá! Meu nome é Joélia Rocha e sou estudante da UNINTER. Sou uma entusiasta da tecnologia e do desenvolvimento web, sempre buscando aprender novas ferramentas e boas práticas para criar experiências digitais incríveis, funcionais e acessíveis.</p>
+      <p>Olá! Meu nome é Joélia Rocha e sou estudante da Escola Superior Politécnica da UNINTER[cite: 1, 2]. Sou uma entusiasta da tecnologia e do desenvolvimento web, sempre buscando aprender novas ferramentas e boas práticas para criar experiências digitais incríveis, funcionais e acessíveis.</p>
     </div>
   </section>
 
@@ -48,14 +49,13 @@
     <h2>Formação Acadêmica</h2>
     <div class="section-content">
       <div class="item-formacao">
-        <h3>UNINTER</h3>
-        <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
-        <p>Graduação: Em andamento  </p>
+        <h3>Centro Universitário Internacional UNINTER</h3>
+        <p><strong>Curso:</strong> Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+        <p>Graduação | Em andamento</p>
       </div>
       <div class="item-formacao">
-        <h3>Outros Cursos & Certificações</h3>
-        <p>Next (Cesar School): Programação de computadores</p>
-        <p>Safetec: Gemini Code Assist & Cloud AI</p>
+        <h3>Cursos Complementares</h3>
+        <p>Desenvolvimento Web Completo (HTML5, CSS3 e JavaScript) - 40h</p>
       </div>
     </div>
   </section>
@@ -63,15 +63,15 @@
   <section id="portfolio" class="site-section">
     <h2>Portfólio</h2>
     <div class="section-content">
-      <p>Aqui estão alguns dos principais projetos que desenvolvi durante a minha jornada de estudos:</p>
+      <p>Aqui estão alguns dos principais projetos conceituais desenvolvidos durante os meus estudos:</p>
       <div class="galeria-portfolio">
         <div class="projeto-card">
           <h3>Projeto 01 - Landing Page</h3>
           <p>Este próprio site portfólio, planejado e estruturado de forma responsiva utilizando tecnologias web puras.</p>
         </div>
         <div class="projeto-card">
-          <h3>Projeto 02 - Bot de Moderação</h3>
-          <p>Desenvolvimento de um sistema automatizado focado em segurança e moderação de comunidades digitais.</p>
+          <h3>Projeto 02 - Sistema de Segurança</h3>
+          <p>Desenvolvimento de uma lógica focada em automação, segurança e moderação de comunidades digitais.</p>
         </div>
       </div>
     </div>
