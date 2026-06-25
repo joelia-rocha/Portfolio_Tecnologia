@@ -6,17 +6,18 @@
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    /* Alinha o logo na esquerda e o botão de menu na direita */
     justify-content: space-between; 
-    padding: 40px 100px;
+    padding: 20px 100px;
     z-index: 10000;
     transition: 0.6s;
     align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
 }
 
 header .logo {
@@ -51,7 +52,7 @@ header .logo {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 150px 100px 100px; 
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     display: flex;
     align-items: center;
@@ -59,20 +60,19 @@ header .logo {
     z-index: 2;
 }
 
-/* AJUSTADO: Move o conteúdo do site para a esquerda (-400px) abrindo espaço para a direita */
 .banner.active {
     transform: translateX(-400px);
 }
 
-/* AJUSTADO: Posiciona a estrutura do menu fixada estritamente na borda DIREITA */
+/* Menu fixado escondido no lado direito */
 #navigation {
     position: fixed;
     top: 0;
-    right: -400px; /* Escondido para fora da tela no lado direito */
+    right: -400px; 
     width: 400px;
     height: 100vh;
     background: #0c79ac;
-    z-index: 1;
+    z-index: 10001; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -81,7 +81,6 @@ header .logo {
     transition: 0.5s;
 }
 
-/* AJUSTADO: Desliza o menu de volta para a tela se alinhando na extremidade direita */
 #navigation.active {
     right: 0;
 }
@@ -184,7 +183,7 @@ header .logo {
 }
 
 .site-section {
-    padding: 80px 100px;
+    padding: 100px 100px 80px;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -315,30 +314,27 @@ header .logo {
     background: #000;
 }
 
-/* Ajustes de responsividade mobile adaptados para a direita */
 @media (max-width: 767px) {
     header {
-        padding: 20px 30px;
+        padding: 15px 30px;
     }
 
     #toggle {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .banner {
-        padding: 120px 30px 150px;
+        padding: 120px 30px 100px;
     }
 
     .banner h2 {
         font-size: 1.8em;
     }
 
-    /* AJUSTADO: Empurra o layout mobile para a esquerda */
     .banner.active {
         transform: translateX(-250px);
     }
 
-    /* AJUSTADO: Alinha a gaveta mobile na direita */
     #navigation {
         width: 250px;
         right: -250px;
@@ -355,6 +351,6 @@ header .logo {
     }
 
     .site-section {
-        padding: 60px 30px;
+        padding: 80px 30px 60px;
     }
 }
