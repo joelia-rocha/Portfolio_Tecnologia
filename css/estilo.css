@@ -59,16 +59,16 @@ header .logo {
     z-index: 2;
 }
 
-/* Quando ativo, empurra o conteúdo do site para a direita de forma fluida */
+/* AJUSTADO: Move o conteúdo do site para a esquerda (-400px) abrindo espaço para a direita */
 .banner.active {
-    transform: translateX(400px);
+    transform: translateX(-400px);
 }
 
-/* Configura o menu fixado estritamente no lado esquerdo */
+/* AJUSTADO: Posiciona a estrutura do menu fixada estritamente na borda DIREITA */
 #navigation {
     position: fixed;
     top: 0;
-    left: -400px; 
+    right: -400px; /* Escondido para fora da tela no lado direito */
     width: 400px;
     height: 100vh;
     background: #0c79ac;
@@ -81,8 +81,9 @@ header .logo {
     transition: 0.5s;
 }
 
+/* AJUSTADO: Desliza o menu de volta para a tela se alinhando na extremidade direita */
 #navigation.active {
-    left: 0;
+    right: 0;
 }
 
 /* Estilo do cabeçalho/label interna do menu */
@@ -314,6 +315,7 @@ header .logo {
     background: #000;
 }
 
+/* Ajustes de responsividade mobile adaptados para a direita */
 @media (max-width: 767px) {
     header {
         padding: 20px 30px;
@@ -331,13 +333,21 @@ header .logo {
         font-size: 1.8em;
     }
 
+    /* AJUSTADO: Empurra o layout mobile para a esquerda */
     .banner.active {
-        transform: translateX(250px);
+        transform: translateX(-250px);
     }
 
+    /* AJUSTADO: Alinha a gaveta mobile na direita */
     #navigation {
         width: 250px;
-        left: -250px;
+        right: -250px;
+        left: auto;
+    }
+
+    #navigation.active {
+        right: 0;
+        left: auto;
     }
 
     #navigation ul li a {
